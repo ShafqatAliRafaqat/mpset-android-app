@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear1"
+android:paddingLeft="5dp"
+    android:layout_marginTop="3dp"
+    android:paddingTop="5dp"
+
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_name_pending_host_public"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:text="Jhon Alberte"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_status_pending_host_public"
+        android:textSize="11dp"
+        android:textColor="#000"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="(Pending Voting)"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/checked"
+        android:id="@+id/accept_icon"
+        android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/close"
+            android:id="@+id/reject_request"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/view"
+            android:id="@+id/view_profile"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    </LinearLayout>

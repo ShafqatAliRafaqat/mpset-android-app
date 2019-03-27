@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear1"
+android:paddingLeft="5dp"
+    android:layout_marginTop="3dp"
+    android:paddingTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_name_pending_host_private"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:text="Jhon Alberte"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:gravity="right"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_status_pending_host_private_date1"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Pending Voting"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_status_pending_host_private_date2"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Pending Voting"
+            />
+    </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MPSET</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_header_name">New Event</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="about_text">MPSET supplies the solution for managing private poker events between friends from the schedule action through managing the buy-ins and supplies statistics to the players. Furthermore, it manages public scheduled events and ability to manage open/public tables based on geo location.</string>
+    <string name="site_link"><u>visit us</u></string>
+    <string name="contact_us"><u>Contact Us</u></string>
+    <string name="register">Register Now</string>
+    <string name="termsandconditions">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="resend">Re-send code</string>
+    <string name="facebook_app_id">1995323644093662</string>
+    <!--<string name="facebook_app_id">784475178556410</string>-->
+    <string name="fb_login_protocol_scheme">1995323644093662</string>
+    <!--<string name="fb_login_protocol_scheme">fb784475178556410</string>-->
+    <string name="base_url">http://mpset.co/MpsetLaravel/public/api/v1/en</string>
+    <!--<string name="base_url">http://182.184.66.211:8080/~saad/mpset/public/api/v1/en</string>-->
+    <!--<string name="base_url">http://192.168.10.60:8080/~saad/mpset/public/api/v1/en</string>-->
+</resources>

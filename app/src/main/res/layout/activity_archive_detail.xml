@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.mpset.pokerevents.Activities.ArchiveDetail">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title=""
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backarrow"
+            android:layout_gravity="center"
+            android:id="@+id/image_archive_back"/>
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/defaulticon"-->
+            <!--android:id="@+id/image_archive"/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Archive Event"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/title_archive_event_name"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="22dp"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            tools:context="com.mpset.pokerevents.Fragments.ArchiveHostDetail">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Details"
+                    android:padding="5dp"
+                    android:textSize="16dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:id="@+id/view_details_archive_host"
+                    android:background="@drawable/goldtoggleleft"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Statistics"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:id="@+id/view_statistics_archive_host"
+                    android:background="@drawable/whitetoggleright"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/location" />
+
+                            <TextView
+                                android:id="@+id/location_archive_host"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Divine Center 2 Lahore"
+                                android:textColor="#000"
+                                android:textSize="16dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/calendar" />
+
+                            <TextView
+                                android:id="@+id/date_archive_host"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="15/12/2018 20:30 "
+                                android:textColor="#000"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status  "
+                                android:textColor="#000"
+                                android:textSize="16dp" />
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/forwadarrow" />
+
+                            <TextView
+                                android:id="@+id/status_archive_host"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Complete "
+                                android:textColor="#000"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:id="@+id/host_detail_part">-->
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:orientation="horizontal">-->
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#000"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:text="Rate"/>-->
+
+                        <!--<RatingBar-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:numStars="5"-->
+                        <!--android:scaleX=".8"-->
+                        <!--android:scaleY=".8"-->
+                        <!--android:layout_marginLeft="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/rating_archive_host"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:textColor="#000"-->
+                        <!--/>-->
+
+                        <!--</LinearLayout>-->
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:orientation="horizontal">-->
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#000"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:text="Review "/>-->
+
+                        <!--<EditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:id="@+id/edit__review_player_location"-->
+                        <!--android:textColor="#737373"-->
+                        <!--/>-->
+                        <!--</LinearLayout>-->
+                        <!--</LinearLayout>-->
+                        <LinearLayout
+                            android:id="@+id/host_statistics_part"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Duration Time(MM) "
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/forwadarrow" />
+
+                                <TextView
+                                    android:id="@+id/duration_archive_host"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="130"
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:id="@+id/linear_home_payment"
+                                android:layout_marginBottom="10dp"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Total Home Payment Amount"
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/forwadarrow" />
+
+                                <TextView
+                                    android:id="@+id/home_payment_archive_host"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="0"
+                                    android:textColor="#000"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/linear_rating_button_players"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true">
+                    <Button
+                        android:layout_width="110dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/btnback"
+                        android:textColor="#fff"
+                        android:textAllCaps="false"
+                        android:id="@+id/rate_host_history_player"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="13dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Rate Host"/>
+                    <Button
+                        android:layout_width="110dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/btnback"
+                        android:textColor="#fff"
+                        android:textAllCaps="false"
+                        android:id="@+id/rate_location_history_player"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="13dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Rate Location"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:visibility="gone"
+                android:id="@+id/cart_location_rate"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/title_location_rate"
+                android:layout_gravity="top"
+                android:textSize="16dp"
+                android:text="Location Rating"/>
+
+                <RatingBar
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                    android:rating="2"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/title_location_rate"
+                android:layout_marginLeft="0dp"
+                    style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+                android:layout_height="40dp"
+                android:id="@+id/rating_location_view"
+                android:textColor="#000"
+                />
+                    <Button
+                        android:layout_width="110dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/btnback"
+                        android:textColor="#fff"
+                        android:layout_toRightOf="@+id/rating_location_view"
+                        android:textAllCaps="false"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/view_location_rating_history_host"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="view more"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:visibility="gone"
+                android:id="@+id/cart_host_rate"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/title_host_rate"
+                        android:layout_gravity="top"
+                        android:textSize="16dp"
+                        android:text="Host Rating       "/>
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:numStars="5"
+                        android:scaleX=".8"
+                        android:scaleY=".8"
+                        android:rating="4"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/title_host_rate"
+                        android:layout_marginLeft="0dp"
+                        style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+                        android:layout_height="40dp"
+                        android:id="@+id/rating_host_view"
+                        android:textColor="#000"
+                        />
+                    <Button
+                        android:layout_width="110dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/btnback"
+                        android:textColor="#fff"
+                        android:layout_toRightOf="@+id/rating_host_view"
+                        android:textAllCaps="false"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/view_host_rating_history_host"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="view more"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/host_detail_part2"
+                    app:cardCornerRadius="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/chair"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="16dp"
+                                android:text="x seats out of y available seats"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="right"
+                                android:layout_gravity="right"
+                                android:id="@+id/seats_archive_host"
+                                android:textColor="#000"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:text="4/8"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#000"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/buyins"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#000"
+                                android:textSize="16dp"
+                                android:text="Minimum / Maximum Buy In"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:gravity="right"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/min_max_butin_archive_host"
+                                android:textColor="#000"
+                                android:layout_marginRight="5dp"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                android:text="4/8"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#000"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/balance"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="14dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="Minimum / Maximum Player per table"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/min_max_player_archive_host"
+                                android:textColor="#000"
+                                android:gravity="right"
+                                android:textStyle="bold"
+                                android:layout_marginRight="5dp"
+                                android:textSize="14dp"
+                                android:text="4/8"/>
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="120dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/btnback"
+                            android:textColor="#fff"
+                            android:textAllCaps="false"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="13dp"
+                            android:id="@+id/table_rules_archive"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Table Rules"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/rcyclerview_plaerlist_archive_host_statistics"/>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/host_detail_part2"
+                    android:id="@+id/rcyclerview_plaerlist_archive_host_details"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

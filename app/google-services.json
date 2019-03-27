@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "669317931495",
+    "firebase_url": "https://mpset-co.firebaseio.com",
+    "project_id": "mpset-co",
+    "storage_bucket": "mpset-co.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669317931495:android:fdf87aaf4388b509",
+        "android_client_info": {
+          "package_name": "com.example.mpset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669317931495-s4bt1tl3h1081642o63irrso7b51p9p9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mpset",
+            "certificate_hash": "7840e79e4a4ccf15da8a61cd89c5fc1571189881"
+          }
+        },
+        {
+          "client_id": "669317931495-en79bhq0ugoch00kteguf178bs4m70ep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv_Pb3XYIUpJ9J7L6hmXhHQ8DaqoMN2UI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669317931495-a8ki8pb36tuf53ua45ok5nijal7f26i0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669317931495:android:a465cb60e58833ad",
+        "android_client_info": {
+          "package_name": "com.mpset.pokerevents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669317931495-5e4784rd6rfvvmcpaib81bc8df5vbn46.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mpset.pokerevents",
+            "certificate_hash": "7840e79e4a4ccf15da8a61cd89c5fc1571189881"
+          }
+        },
+        {
+          "client_id": "669317931495-joho8c6o2slgm0q8rqoth87cljhgcsgr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mpset.pokerevents",
+            "certificate_hash": "8d88c05bfb5af1f5e189890b767f6092009d4a55"
+          }
+        },
+        {
+          "client_id": "669317931495-en79bhq0ugoch00kteguf178bs4m70ep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv_Pb3XYIUpJ9J7L6hmXhHQ8DaqoMN2UI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669317931495-a8ki8pb36tuf53ua45ok5nijal7f26i0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

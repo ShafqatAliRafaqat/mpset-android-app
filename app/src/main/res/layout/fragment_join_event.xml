@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mpset.pokerevents.Fragments.JoinEvent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Search Friend"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="14dp"
+        android:drawableTint="#000"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/search"
+        android:textSize="12dp"
+        android:background="@drawable/searchbg"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/search"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_join_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

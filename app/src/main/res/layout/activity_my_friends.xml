@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mpset.pokerevents.Activities.MyFriends">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Search Friend"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="14dp"
+        android:drawableTint="#000"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/search"
+        android:textSize="12dp"
+        android:background="@drawable/searchbg"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/search_myfriends"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friends list is currently empty, please add your friends"
+        android:layout_margin="30dp"
+        android:visibility="gone"
+        android:id="@+id/empty_myfriends"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_my_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search" />
+
+</LinearLayout>

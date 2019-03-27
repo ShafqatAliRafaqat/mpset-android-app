@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/nav_lobby"
+            android:icon="@drawable/event"
+            android:title="Lobby" />
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/terms"
+            android:title="Terms &amp; Conditions" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/terms"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/email"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_app_rate"
+            android:icon="@drawable/rating"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Log Out" />
+    </group>
+
+
+</menu>

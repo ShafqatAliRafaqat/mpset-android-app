@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mpset.pokerevents">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_PROFILE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute"
+        tools:replace="allowBackup,supportsRtl">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Login"
+            android:label="@string/title_activity_login"
+            >
+        </activity>
+        <activity
+            android:name=".Activities.Register"
+            android:parentActivityName=".Activities.Login"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".Activities.SmsVerification"
+            android:parentActivityName=".Activities.AgreeTermCondition" />
+        <activity
+            android:name=".Activities.UserNotification"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.JoinEvent"
+            android:parentActivityName=".MainActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDeYmkix3cVAQH-n8YrWdlw75P3xAWT6YQ" />
+        <!-- android:value="AIzaSyBvmIJeuhK8UGiXcXrczgDZklMV6jeANtY" /> -->
+
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="@string/google_maps_key" /> -->
+
+        <activity
+            android:name=".ContactDetails.About"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ContactDetails.ContactUs"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ContactDetails.TermsAndConditions"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.MyFriends"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.AddToFriend"
+            android:parentActivityName=".Activities.MyFriends" />
+        <activity
+            android:name=".Activities.NewEventCashTour"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.CreateEventGameType"
+            android:parentActivityName=".Activities.NewEventCashTour" />
+        <activity
+            android:name=".Activities.NewEventFriendSelection"
+            android:parentActivityName=".Activities.CreateEventGameType" />
+        <activity android:name=".Activities.ArchiveDetail" />
+        <activity android:name=".Activities.AttendingEventDetail" />
+        <activity android:name=".Activities.HostPublicEventDetail" />
+        <activity android:name=".Activities.ViewProfile" />
+        <activity android:name=".Activities.MyProfile" />
+        <activity
+            android:name=".Activities.ForgotPassword"
+            android:parentActivityName=".Activities.Login" />
+        <activity
+            android:name=".Activities.InProgressEvent"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Activities.PendingPlayer" />
+        <activity android:name=".Activities.UpdateEvent" />
+        <activity
+            android:name=".Activities.Inbox"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.Chat"
+            android:parentActivityName=".Activities.Inbox" />
+        <activity
+            android:name=".Activities.JoinEventDetailPage"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activities.GoogleDetailPage"
+            android:parentActivityName=".Activities.Login" />
+        <activity
+            android:name=".Activities.FilterPage"
+            android:parentActivityName=".Activities.Login" />
+        <activity
+            android:name=".Activities.AgreeTermCondition"
+            android:parentActivityName=".Activities.Register" />
+        <activity
+            android:name=".Activities.FacebookDetailPage"
+            android:parentActivityName=".Activities.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".Activities.ReviewDetailsPage" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" />
+        <activity android:name=".Activities.AddLocation">
+
+            <!-- <meta-data -->
+            <!-- android:name="com.google.android.geo.API_KEY" -->
+            <!-- android:value="AIzaSyBv_Pb3XYIUpJ9J7L6hmXhHQ8DaqoMN2UI"/> -->
+        </activity>
+        <activity
+            android:name=".Activities.AuditInProgress"/>
+
+        <service
+            android:name=".Helper.MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Activities.EditProfile"
+            android:parentActivityName=".Activities.MyProfile" />
+        <activity android:name=".Activities.EditLocation"
+            android:parentActivityName=".Activities.MyProfile"/>
+        <activity android:name=".ContactDetails.PrivacyPolicy"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>

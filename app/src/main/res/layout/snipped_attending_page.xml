@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/linear1"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="CardsChat Hurricane Harvey Charity Event:"
+        android:id="@+id/event_name_attending"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/linear2"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/location"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/location_event_attending"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:text="Legion Hall,645 5 Broad St, Globe,AZ 85501,USA"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/linear3"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/gametype"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_type_attending"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:text="Event Type"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear3"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linear4"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/calendar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_date_event_attending"
+        android:layout_marginLeft="5dp"
+        android:textSize="10dp"
+        android:text="April 7,2018 9:22 PM"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear4"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/linear5"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center"
+            android:src="@drawable/status"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_status_attending"
+            android:textSize="12dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:text="Status "
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:textColor="#fff"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/linear3"
+        android:textSize="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_cancel_pending"
+        android:textAllCaps="false"
+        android:text="Cancel"
+        android:background="@drawable/btnbackbg"/>
+</RelativeLayout>
+</android.support.v7.widget.CardView>

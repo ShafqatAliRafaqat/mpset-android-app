@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mpset.pokerevents.Fragments.Hosting">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_hosting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currently no hosting event available"
+        android:textColor="#838383"
+        android:padding="10dp"
+        android:id="@+id/empty_event_hosting"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textSize="12dp" />
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear1"
+android:paddingLeft="5dp"
+    android:layout_marginTop="3dp"
+    android:paddingTop="5dp"
+
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="15dp"
+    android:id="@+id/image_review_details"
+    android:src="@drawable/upload_pic_icon"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_review_details"
+            android:textSize="16dp"
+            android:textColor="#000"
+
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:text="John Alberte"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time__review_details"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Pending Voting"
+        />
+</LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_review_details"
+        android:textSize="13dp"
+        android:gravity="left"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:text="Its Good host i always be recommend to play with their hosting. its also a good player. it was fun to play to them. it was so good. i will always try to play with them."
+        />
+</LinearLayout>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:scaleX=".8"
+            android:scaleY=".8"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            style = "?android:attr/ratingBarStyleIndicator"
+            android:numStars = "5"
+            android:layout_marginRight="5dp"
+            android:rating="5"
+            android:id="@+id/rating_review_details"
+            android:textSize="16dp"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
